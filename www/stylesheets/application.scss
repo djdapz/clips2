@@ -1,0 +1,83 @@
+$grey-background: #f1f1f1;
+
+.view-frame{
+    height: 100%;
+    background-color: $grey-background;
+
+}
+
+.clips-navbar {
+    background-color: $grey-background;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        width: 50%;
+        a{
+            display: block;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            color: grey;
+        }
+
+        a.active{
+            color: #6cb5ff;
+        }
+
+    }
+}
+
+.coupon-card{
+    margin: 10px 10px;
+    background-color: #fff;
+
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 52px;
+        overflow: hidden;
+        margin-top: 7px;
+    }
+
+    .row{
+        margin: 0
+    }
+}
+
+.coupon-scroll-area{
+    background-color: $grey-background;
+    padding-top: 1px;
+    padding-bottom: 50px;
+    height: 100%
+}
+
+
+#detail-page{
+
+
+    .content{
+        padding-top: 10px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .button-row{
+        .btn{
+            width: 100%
+        }
+    }
+
+    .row{
+        margin-left: 2px
+    }
+}
+
+
