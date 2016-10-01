@@ -1,18 +1,43 @@
 $grey-background: #f1f1f1;
 
+
 .view-frame{
     height: 100%;
     background-color: $grey-background;
 
 }
 
+.spin{
+     -webkit-transform-origin: 50% 58%;
+     transform-origin:50% 58%;
+     -ms-transform-origin:50% 58%; /* IE 9 */
+     -webkit-animation: spin .2s infinite linear;
+     -moz-animation: spin .2s infinite linear;
+     animation: spin .2s infinite linear;
+}
+
+#top-navbar{
+    text-align: center;
+    height: 53px;
+}
+
+
+
+
 .clips-navbar {
-    background-color: $grey-background;
+    // background-color: $grey-background;
+    background-color: white;
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
+    }
+
+    .glyphicon{
+        padding-top: 8px;
+        display: block;
+        text-align: center;
     }
 
     li {
@@ -24,6 +49,8 @@ $grey-background: #f1f1f1;
             padding: 16px;
             text-decoration: none;
             color: grey;
+            padding-top: 3px;
+            padding-bottom: 8px;
         }
 
         a.active{
@@ -79,5 +106,3 @@ $grey-background: #f1f1f1;
         margin-left: 2px
     }
 }
-
-

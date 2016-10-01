@@ -1,13 +1,13 @@
 <div id="coupon-page">
-    <super-navbar>
-        <super-navbar-title>
-            Deals For You
-        </super-navbar-title>
-    </super-navbar>
+
 
 
     <div ng-if="waiting">
-       Waiting for server
+       <h3>Waiting for server
+       </h3>
+       <span class="glyphicon glyphicon-refresh spin"></span>
+
+
     </div>
 
     <div ng-if="error">
@@ -19,7 +19,7 @@
     </div>
     <div ng-if="!waiting && !error" class="coupon-scroll-area">
         <div class="coupon-card " ng-repeat="coupon in coupons">
-            <a class="row" ng-href="/#coupons/{{coupon.id}}">
+            <a class="row" ng-href="/#coupons/{{coupon.id}}" ng-click = "goTo(coupon.id)">
                 <div ng-if="coupon.photo_link" class="col-sm-2">
                     <img src={{coupon.photo_link}}>
                 </div>
@@ -38,11 +38,6 @@
                     </p>
                 </div>
             </a>
-
-
-
-
-
         </div>
     </div>
 </div>

@@ -1,5 +1,5 @@
 /* recommended */
-var CouponsController = function($scope, $http){
+var CouponsController = function($scope, $http, NavBarService){
 
     $scope.navbarTitle = "i have 10 coupons";
     $scope.error = undefined;
@@ -18,6 +18,10 @@ var CouponsController = function($scope, $http){
             $scope.waiting = false;
         }
     );
+    $scope.goTo = function(id){
+        NavBarService.pathStackPush('coupons', '#coupons', "#coupons/"+id)
+    }
+
 
     $scope.coupons = [
         {
@@ -99,5 +103,4 @@ angular
     .module('clips.coupons')
     .controller("CouponsController", CouponsController);
 
-CouponsController.$inject = ['$scope', '$http'];
-
+CouponsController.$inject = ['$scope', '$http', "NavBarService"];
