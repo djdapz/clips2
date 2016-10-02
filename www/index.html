@@ -4,7 +4,7 @@
   <meta charset="utf8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <title>My Steroids App</title>
+  <title>Clips</title></title>
 
   <link rel="stylesheet" href="/components/supersonic/css/supersonic.css">
   <link rel="stylesheet" href="/stylesheets/application.css">
@@ -31,6 +31,7 @@
   <script src="/app/coupons/coupons.controller.js"></script>
   <script src="/app/coupons/couponsDetail.controller.js"></script>
   <script src="/app/businesses/businesses.controller.js"></script>
+  <script src="/app/businesses/businessesDetails.controller.js"></script>
 
 </head>
 <body ng-app="clips">
@@ -49,14 +50,14 @@
 
 <div id="top-navbar">
   <div ng-if="back[tabs[activeTabIndex].text.toLowerCase()]" class ="row">
-    <button ng-click='goBack()' class='btn btn-link col-xs-4' >
+    <button ng-click='goBack()' class='btn btn-link col-xs-3' >
       Back
     </button>
-    <h4 ng-bind="tabs[activeTabIndex].text" class="col-xs-4 ">
+    <h4 ng-bind="tabs[activeTabIndex].text" class="col-xs-6">
     </h4>
   </div>
   <div ng-if="!back[tabs[activeTabIndex].text.toLowerCase()]" class ="row">
-    <h4 ng-bind="tabs[activeTabIndex].text" class="col-xs-4 col-xs-offset-4 ">
+    <h4 ng-bind="tabs[activeTabIndex].text" class="col-xs-6 col-xs-offset-3 ">
     </h4>
   </div>
 

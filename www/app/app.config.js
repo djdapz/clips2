@@ -14,6 +14,10 @@
                     templateUrl: 'app/coupons/detail.html',
                     controller: 'CouponsDetailController'
                 }).
+                when('/businesses/:businesssId', {
+                    templateUrl: 'app/businesses/detail.html',
+                    controller: 'BusinessesDetailsController'
+                }).
                 otherwise({
                     redirectTo: '/coupons'
                 });

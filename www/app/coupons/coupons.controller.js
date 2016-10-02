@@ -1,7 +1,5 @@
 /* recommended */
 var CouponsController = function($scope, $http, NavBarService){
-
-    $scope.navbarTitle = "i have 10 coupons";
     $scope.error = undefined;
     $scope.waiting = true;
 
@@ -19,82 +17,11 @@ var CouponsController = function($scope, $http, NavBarService){
         }
     );
     $scope.goTo = function(id){
-        NavBarService.pathStackPush('coupons', '#coupons', "#coupons/"+id)
+        NavBarService.pathStackPush('coupons', '/coupons', "#coupons/"+id)
     }
 
 
-    $scope.coupons = [
-        {
-            business_name: "Tommy Nevins Pub",
-            deal_text: "$6 Pitchers",
-            start: "Thursday 6:00 PM",
-            end: "Thursday 3:00 AM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        },
-        {
-            business_name: "Noodles & Company",
-            deal_text: "Buy One Get One",
-            start: "Wednesday 11:00 AM",
-            end: "Wednesday 2:00 PM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        },
-        {
-            business_name: "Tommy Nevins Pub",
-            deal_text: "$6 Pitchers",
-            start: "Thursday 6:00 PM",
-            end: "Thursday 3:00 AM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        },
-        {
-            business_name: "Noodles & Company",
-            deal_text: "Buy One Get One",
-            start: "Wednesday 11:00 AM",
-            end: "Wednesday 2:00 PM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        },
-        {
-            business_name: "Tommy Nevins Pub",
-            deal_text: "$6 Pitchers",
-            start: "Thursday 6:00 PM",
-            end: "Thursday 3:00 AM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        },
-        {
-            business_name: "Noodles & Company",
-            deal_text: "Buy One Get One",
-            start: "Wednesday 11:00 AM",
-            end: "Wednesday 2:00 PM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        },
-        {
-            business_name: "Tommy Nevins Pub",
-            deal_text: "$6 Pitchers",
-            start: "Thursday 6:00 PM",
-            end: "Thursday 3:00 AM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        },
-        {
-            business_name: "Noodles & Company",
-            deal_text: "Buy One Get One",
-            start: "Wednesday 11:00 AM",
-            end: "Wednesday 2:00 PM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        },
-        {
-            business_name: "Tommy Nevins Pub",
-            deal_text: "$6 Pitchers",
-            start: "Thursday 6:00 PM",
-            end: "Thursday 3:00 AM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        },
-        {
-            business_name: "Noodles & Company",
-            deal_text: "Buy One Get One",
-            start: "Wednesday 11:00 AM",
-            end: "Wednesday 2:00 PM",
-            image_link: "http://weknowyourdreams.com/images/beer/beer-01.jpg"
-        }
-    ]
+    $scope.coupons = undefined;
 
 };
 

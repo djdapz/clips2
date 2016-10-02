@@ -63,7 +63,6 @@ $grey-background: #f1f1f1;
 .coupon-card{
     margin: 10px 10px;
     background-color: #fff;
-
     img {
         width: 80px;
         height: 80px;
@@ -71,12 +70,24 @@ $grey-background: #f1f1f1;
         overflow: hidden;
         margin-top: 7px;
     }
+}
 
-    .row{
-        margin: 0
+.business-card{
+    margin: 10px 10px;
+    background-color: #fff;
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 52px;
+        overflow: hidden;
+        margin-top: 7px;
     }
 }
 
+// deal with supersonic styling
+.row{
+    margin: 0
+}
 .coupon-scroll-area{
     background-color: $grey-background;
     padding-top: 1px;
@@ -85,14 +96,14 @@ $grey-background: #f1f1f1;
 }
 
 
-#detail-page{
+.detail-page{
 
 
     .content{
         padding-top: 10px;
     }
 
-    img{
+    #header-image{
         width: 100%;
     }
 
