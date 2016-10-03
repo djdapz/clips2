@@ -4,7 +4,7 @@ $grey-background: #f1f1f1;
 .view-frame{
     height: 100%;
     background-color: $grey-background;
-
+    margin-top: 53px
 }
 
 .spin{
@@ -19,6 +19,13 @@ $grey-background: #f1f1f1;
 #top-navbar{
     text-align: center;
     height: 53px;
+    position: fixed;
+    display: block;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: white;
 }
 
 
